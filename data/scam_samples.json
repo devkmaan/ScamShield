@@ -1,0 +1,23 @@
+[
+  {
+    "label": "UPI_COLLECT",
+    "text": "Refund receive karne ke liye QR scan karo aur UPI PIN enter karo."
+  },
+  {
+    "label": "PHISHING",
+    "text": "Your SBI KYC expires today. Click https://sbi-verify-support.com and share OTP to unblock."
+  },
+  {
+    "label": "IMPERSONATION",
+    "text": "Fraud alert from bank. Move your money to safe account immediately."
+  },
+  {
+    "label": "JOB_SCAM",
+    "text": "Part time job daily task. Pay registration fee and earn commission."
+  },
+  {
+    "label": "INVESTMENT",
+    "text": "Guaranteed return crypto profit. Double money in 7 days."
+  }
+]
+

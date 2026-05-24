@@ -1,0 +1,188 @@
+[2m3:08:33 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /ready[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:08:33 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/admin/summary[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:43:17 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /ready[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:43:17 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/admin/summary[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:43:17 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/insights/trends[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:43:17 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/model/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:43:17 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/genai/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:43:17 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /ready[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:43:17 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/admin/summary[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:43:17 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/insights/trends[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:43:17 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/model/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:43:17 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/genai/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:53:32 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /ready[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:53:32 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/admin/summary[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:53:32 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/insights/trends[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:53:32 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/model/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:53:32 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/genai/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:53:34 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /ready[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:53:34 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/admin/summary[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:53:34 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/insights/trends[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:53:34 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/model/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:53:34 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/genai/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:59:03 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /ready[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:59:03 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/admin/summary[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:59:03 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/insights/trends[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:59:03 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/model/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:59:03 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/genai/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:59:04 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /ready[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:59:04 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/admin/summary[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:59:04 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/insights/trends[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:59:04 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/model/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m3:59:04 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/genai/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:06:59 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /ready[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:06:59 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/admin/summary[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:06:59 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/insights/trends[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:06:59 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/model/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:06:59 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/genai/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:06:59 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /ready[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:06:59 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/admin/summary[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:06:59 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/insights/trends[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:06:59 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/model/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:06:59 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/genai/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:25:49 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /ready[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:25:49 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/admin/summary[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:25:49 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /v1/insights/trends[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:25:49 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/model/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)
+[2m4:25:49 pm[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /internal/genai/metadata[39m
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1116:18)
+    at afterConnectMultiple (node:net:1683:7)

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scamshield.local/schemas/risk-decision.schema.json",
+  "title": "RiskDecision",
+  "type": "object",
+  "required": [
+    "decisionId",
+    "inputType",
+    "riskLevel",
+    "score",
+    "confidence",
+    "scamType",
+    "topSignals",
+    "userMessage",
+    "recommendedActions",
+    "needsHumanReview",
+    "createdAt"
+  ],
+  "properties": {
+    "decisionId": { "type": "string" },
+    "inputType": { "type": "string", "enum": ["AUTO", "TEXT", "URL", "QR", "UPI_ID", "SCREENSHOT"] },
+    "riskLevel": { "type": "string", "enum": ["LOW", "CAUTION", "HIGH_RISK", "CRITICAL"] },
+    "score": { "type": "number", "minimum": 0, "maximum": 1 },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "scamType": {
+      "type": "string",
+      "enum": ["UNKNOWN", "UPI_COLLECT", "PHISHING", "IMPERSONATION", "JOB_SCAM", "INVESTMENT", "LOAN_APP", "FAKE_RECEIPT"]
+    },
+    "topSignals": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "userMessage": { "type": "string" },
+    "recommendedActions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "needsHumanReview": { "type": "boolean" },
+    "payeeHash": { "type": "string" },
+    "reportId": { "type": "string" },
+    "modelVersions": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "createdAt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}

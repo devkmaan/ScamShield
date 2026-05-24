@@ -1,0 +1,23 @@
+{
+  "decisionId": "dec-demo",
+  "inputType": "TEXT",
+  "riskLevel": "CRITICAL",
+  "score": 0.92,
+  "confidence": 0.94,
+  "scamType": "PHISHING",
+  "topSignals": ["otp_request", "kyc_update_pressure", "brand_spoofing"],
+  "userMessage": "Critical risk lag raha hai. Payment mat karo.",
+  "recommendedActions": [
+    "Do not share OTP, UPI PIN, card details, screen, or remote access.",
+    "Verify using official bank or app support."
+  ],
+  "needsHumanReview": false,
+  "modelVersions": {
+    "rules": "rules-v1",
+    "text": "text-scam-nb-v1",
+    "url": "url-lexical-v1",
+    "merchant": "merchant-graph-rules-v1",
+    "explanation": "template-explainer-v1"
+  },
+  "createdAt": "2026-04-25T08:00:00Z"
+}

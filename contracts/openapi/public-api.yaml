@@ -1,0 +1,251 @@
+openapi: 3.1.0
+info:
+  title: ScamShield Public API
+  version: 1.0.0
+  description: Public and edge-facing APIs for the WhatsApp-first ScamShield MVP.
+servers:
+  - url: http://localhost:8080
+paths:
+  /health:
+    get:
+      summary: Liveness check
+      responses:
+        "200":
+          description: Service is alive
+  /ready:
+    get:
+      summary: Readiness check with local queue and store counters
+      responses:
+        "200":
+          description: Service is ready
+  /webhooks/whatsapp:
+    get:
+      summary: WhatsApp Cloud API webhook verification
+      parameters:
+        - name: hub.mode
+          in: query
+          schema:
+            type: string
+        - name: hub.verify_token
+          in: query
+          schema:
+            type: string
+        - name: hub.challenge
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Verification challenge accepted
+        "403":
+          description: Invalid verify token
+    post:
+      summary: Receive WhatsApp Cloud API webhook messages
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "202":
+          description: Messages accepted for asynchronous processing
+  /v1/check:
+    post:
+      summary: Synchronously check a suspicious text, URL, QR payload, UPI ID, or media reference
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CheckRequest"
+      responses:
+        "200":
+          description: Risk decision
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RiskDecision"
+        "429":
+          description: Rate limit exceeded
+  /v1/feedback:
+    post:
+      summary: Submit user or analyst feedback for a decision
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FeedbackRequest"
+      responses:
+        "200":
+          description: Feedback accepted
+  /v1/recovery/start:
+    post:
+      summary: Start an already-paid recovery flow and create draft guidance
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CheckRequest"
+      responses:
+        "200":
+          description: Recovery risk decision with report ID when available
+  /v1/evidence:
+    get:
+      summary: List locally retained evidence objects
+      responses:
+        "200":
+          description: Evidence list
+    post:
+      summary: Store redacted evidence metadata for a recovery case
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [content]
+              properties:
+                reportId:
+                  type: string
+                decisionId:
+                  type: string
+                userId:
+                  type: string
+                mediaType:
+                  type: string
+                source:
+                  type: string
+                content:
+                  type: string
+      responses:
+        "201":
+          description: Evidence object created
+  /v1/evidence/{evidenceId}:
+    delete:
+      summary: Delete a retained evidence object
+      parameters:
+        - name: evidenceId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Evidence deleted
+  /v1/risk/payee/{payeeHash}:
+    get:
+      summary: Look up privacy-safe payee risk profile
+      parameters:
+        - name: payeeHash
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Merchant risk response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MerchantRisk"
+  /v1/reports/{reportId}:
+    get:
+      summary: Retrieve a draft recovery report
+      parameters:
+        - name: reportId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Recovery report
+        "404":
+          description: Report not found
+  /v1/outbox:
+    get:
+      summary: Local development outbox for WhatsApp replies
+      parameters:
+        - name: userId
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Local outbox messages
+  /v1/events:
+    get:
+      summary: Local development event log
+      responses:
+        "200":
+          description: Recent event envelopes
+  /v1/admin/summary:
+    get:
+      summary: Dashboard summary for analyst console
+      responses:
+        "200":
+          description: Summary metrics and recent rows
+  /v1/admin/decisions:
+    get:
+      summary: Recent risk decisions
+      responses:
+        "200":
+          description: Decision list
+  /v1/admin/merchants:
+    get:
+      summary: Top merchant risk profiles
+      responses:
+        "200":
+          description: Merchant risk list
+  /v1/simulate/stream:
+    post:
+      summary: Generate synthetic demo decisions and events
+      responses:
+        "200":
+          description: Created decisions
+components:
+  schemas:
+    CheckRequest:
+      type: object
+      properties:
+        userId:
+          type: string
+        inputType:
+          type: string
+          enum: [AUTO, TEXT, URL, QR, UPI_ID, SCREENSHOT]
+        text:
+          type: string
+        url:
+          type: string
+        upiId:
+          type: string
+        qrPayload:
+          type: string
+        mediaRef:
+          type: string
+        alreadyPaid:
+          type: boolean
+        language:
+          type: string
+    RiskDecision:
+      $ref: "../schemas/risk-decision.schema.json"
+    FeedbackRequest:
+      type: object
+      required: [verdict]
+      properties:
+        decisionId:
+          type: string
+        userId:
+          type: string
+        verdict:
+          type: string
+          enum: [SCAM, NOT_SCAM, NEED_HELP, Scam, Not Scam, Need Help]
+        payeeUpi:
+          type: string
+        comment:
+          type: string
+    MerchantRisk:
+      $ref: "../schemas/merchant-risk.schema.json"

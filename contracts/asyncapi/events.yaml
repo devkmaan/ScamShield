@@ -1,0 +1,72 @@
+asyncapi: 3.0.0
+info:
+  title: ScamShield Event Contracts
+  version: 1.0.0
+  description: Kafka/Redpanda topics used by the production ScamShield architecture.
+channels:
+  whatsapp.inbound.v1:
+    address: whatsapp.inbound.v1
+    messages:
+      inbound:
+        $ref: "#/components/messages/WhatsAppInbound"
+  risk.decision.created.v1:
+    address: risk.decision.created.v1
+    messages:
+      decision:
+        $ref: "#/components/messages/RiskDecisionCreated"
+  whatsapp.reply.requested.v1:
+    address: whatsapp.reply.requested.v1
+    messages:
+      reply:
+        $ref: "#/components/messages/WhatsAppReplyRequested"
+  feedback.received.v1:
+    address: feedback.received.v1
+    messages:
+      feedback:
+        $ref: "#/components/messages/FeedbackReceived"
+  merchant.risk.updated.v1:
+    address: merchant.risk.updated.v1
+    messages:
+      merchantRisk:
+        $ref: "#/components/messages/MerchantRiskUpdated"
+  recovery.report.created.v1:
+    address: recovery.report.created.v1
+    messages:
+      recovery:
+        $ref: "#/components/messages/RecoveryReportCreated"
+operations:
+  publishInbound:
+    action: send
+    channel:
+      $ref: "#/channels/whatsapp.inbound.v1"
+  consumeInbound:
+    action: receive
+    channel:
+      $ref: "#/channels/whatsapp.inbound.v1"
+components:
+  messages:
+    WhatsAppInbound:
+      name: whatsapp.inbound
+      payload:
+        $ref: "../schemas/event-envelope.schema.json"
+    RiskDecisionCreated:
+      name: risk.decision.created
+      payload:
+        $ref: "../schemas/event-envelope.schema.json"
+    WhatsAppReplyRequested:
+      name: whatsapp.reply.requested
+      payload:
+        $ref: "../schemas/event-envelope.schema.json"
+    FeedbackReceived:
+      name: feedback.received
+      payload:
+        $ref: "../schemas/event-envelope.schema.json"
+    MerchantRiskUpdated:
+      name: merchant.risk.updated
+      payload:
+        $ref: "../schemas/event-envelope.schema.json"
+    RecoveryReportCreated:
+      name: recovery.report.created
+      payload:
+        $ref: "../schemas/event-envelope.schema.json"
+

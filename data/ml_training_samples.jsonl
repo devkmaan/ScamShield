@@ -1,0 +1,52 @@
+{"label":"scam","scamType":"UPI_COLLECT","text":"Refund receive karne ke liye QR scan karo aur UPI PIN enter karo"}
+{"label":"scam","scamType":"UPI_COLLECT","text":"Paise receive karne ke liye collect request approve karo"}
+{"label":"scam","scamType":"UPI_COLLECT","text":"To receive money scan this QR and enter your UPI PIN"}
+{"label":"scam","scamType":"UPI_COLLECT","text":"Refund lene ke liye UPI PIN dalna padega"}
+{"label":"scam","scamType":"UPI_COLLECT","text":"Buyer ne payment bheja hai receive karne ke liye QR scan karo"}
+{"label":"scam","scamType":"PHISHING","text":"Your SBI KYC is blocked click link and share OTP immediately"}
+{"label":"scam","scamType":"PHISHING","text":"PAN update required account will be suspended verify login password now"}
+{"label":"scam","scamType":"PHISHING","text":"HDFC account blocked click kyc verify support link"}
+{"label":"scam","scamType":"PHISHING","text":"Paytm wallet KYC expire today open verification link"}
+{"label":"scam","scamType":"PHISHING","text":"Aadhaar bank verification pending share OTP to reactivate account"}
+{"label":"scam","scamType":"IMPERSONATION","text":"RBI officer speaking suspicious transaction move your money to safe account"}
+{"label":"scam","scamType":"IMPERSONATION","text":"Bank fraud department says transfer funds to secure wallet"}
+{"label":"scam","scamType":"IMPERSONATION","text":"Police cyber cell calling install AnyDesk for verification"}
+{"label":"scam","scamType":"IMPERSONATION","text":"Customer care wants screen share to fix failed payment"}
+{"label":"scam","scamType":"IMPERSONATION","text":"Fraud alert move money immediately to protected account"}
+{"label":"scam","scamType":"JOB_SCAM","text":"Part time job daily task pay registration fee earn commission"}
+{"label":"scam","scamType":"JOB_SCAM","text":"Telegram task prepaid order deposit required for salary"}
+{"label":"scam","scamType":"JOB_SCAM","text":"Work from home recharge task pay security deposit"}
+{"label":"scam","scamType":"JOB_SCAM","text":"Like videos earn money first complete paid task"}
+{"label":"scam","scamType":"JOB_SCAM","text":"Online job confirmed pay joining fee on UPI"}
+{"label":"scam","scamType":"INVESTMENT","text":"Guaranteed return crypto profit double money in 7 days"}
+{"label":"scam","scamType":"INVESTMENT","text":"Stock tip VIP signal fixed profit risk free investment"}
+{"label":"scam","scamType":"INVESTMENT","text":"Invest 5000 get 15000 daily payout no risk"}
+{"label":"scam","scamType":"INVESTMENT","text":"Crypto trading group guaranteed profit send money now"}
+{"label":"scam","scamType":"INVESTMENT","text":"Double your money with private investment plan"}
+{"label":"scam","scamType":"LOAN_APP","text":"Loan overdue pay immediately or we will contact your family"}
+{"label":"scam","scamType":"LOAN_APP","text":"Legal notice loan app pay now or photo will be shared"}
+{"label":"scam","scamType":"LOAN_APP","text":"Repay instant loan today or contact list will be called"}
+{"label":"scam","scamType":"FAKE_RECEIPT","text":"Payment screenshot sent amount credited please dispatch product"}
+{"label":"scam","scamType":"FAKE_RECEIPT","text":"Transaction successful check screenshot release item now"}
+{"label":"safe","scamType":"UNKNOWN","text":"Your bank statement is available in the official mobile app"}
+{"label":"safe","scamType":"UNKNOWN","text":"Payment received from customer order completed successfully"}
+{"label":"safe","scamType":"UNKNOWN","text":"Please verify the invoice details before making payment"}
+{"label":"safe","scamType":"UNKNOWN","text":"Meeting reminder with finance team at 4 pm"}
+{"label":"safe","scamType":"UNKNOWN","text":"Your package is out for delivery track from official app"}
+{"label":"safe","scamType":"UNKNOWN","text":"UPI payment of INR 250 to grocery store completed"}
+{"label":"safe","scamType":"UNKNOWN","text":"Salary credited to your account check official bank app"}
+{"label":"safe","scamType":"UNKNOWN","text":"Reminder to pay electricity bill through official provider"}
+{"label":"safe","scamType":"UNKNOWN","text":"Your refund has been processed and will reflect in bank account"}
+{"label":"safe","scamType":"UNKNOWN","text":"Do not share OTP or UPI PIN with anyone"}
+{"label":"safe","scamType":"UNKNOWN","text":"Security alert login from new device if not you use official app"}
+{"label":"safe","scamType":"UNKNOWN","text":"Customer asked for invoice and delivery timeline"}
+{"label":"safe","scamType":"UNKNOWN","text":"Doctor appointment confirmed for tomorrow morning"}
+{"label":"safe","scamType":"UNKNOWN","text":"School fee receipt generated successfully"}
+{"label":"safe","scamType":"UNKNOWN","text":"Please send bank account details for reimbursement form"}
+{"label":"scam","scamType":"PHISHING","text":"Urgent toll challan pending click short link pay fine"}
+{"label":"scam","scamType":"PHISHING","text":"Courier address failed update card details on link"}
+{"label":"scam","scamType":"UPI_COLLECT","text":"GPay refund pending enter UPI PIN to receive amount"}
+{"label":"scam","scamType":"IMPERSONATION","text":"Amazon refund support asks you to install quick support app"}
+{"label":"safe","scamType":"UNKNOWN","text":"Amazon order refund was completed through official app"}
+{"label":"safe","scamType":"UNKNOWN","text":"Recruiter scheduled interview no fee required"}
+

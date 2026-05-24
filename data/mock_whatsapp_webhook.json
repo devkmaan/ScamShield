@@ -1,0 +1,23 @@
+{
+  "entry": [
+    {
+      "changes": [
+        {
+          "value": {
+            "messages": [
+              {
+                "id": "wamid.demo.1",
+                "from": "919999999999",
+                "type": "text",
+                "text": {
+                  "body": "Your Paytm KYC is blocked. Click https://paytm-verify-help.com and share OTP urgently."
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+

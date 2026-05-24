@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scamshield.local/schemas/event-envelope.schema.json",
+  "title": "EventEnvelope",
+  "type": "object",
+  "required": [
+    "eventId",
+    "eventType",
+    "schemaVersion",
+    "correlationId",
+    "createdAt",
+    "producer",
+    "payload"
+  ],
+  "properties": {
+    "eventId": { "type": "string" },
+    "eventType": { "type": "string" },
+    "schemaVersion": { "type": "string" },
+    "correlationId": { "type": "string" },
+    "causationId": { "type": "string" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "producer": { "type": "string" },
+    "payload": {}
+  },
+  "additionalProperties": false
+}
+

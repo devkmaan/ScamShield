@@ -1,0 +1,77 @@
+openapi: 3.1.0
+info:
+  title: ScamShield ML Service API
+  version: 1.0.0
+paths:
+  /internal/model/score-text:
+    post:
+      summary: Score text for scam probability
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [text]
+              properties:
+                text:
+                  type: string
+                languageHint:
+                  type: string
+                context:
+                  type: object
+      responses:
+        "200":
+          description: Model score
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [modelVersion, score, confidence, scamTypeScores, signals]
+                properties:
+                  modelVersion:
+                    type: string
+                  score:
+                    type: number
+                    minimum: 0
+                    maximum: 1
+                  confidence:
+                    type: number
+                    minimum: 0
+                    maximum: 1
+                  scamTypeScores:
+                    type: object
+                    additionalProperties:
+                      type: number
+                  signals:
+                    type: array
+                    items:
+                      type: string
+  /internal/model/score-url:
+    post:
+      summary: Score URL phishing risk
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [url]
+              properties:
+                url:
+                  type: string
+      responses:
+        "200":
+          description: URL risk score
+  /internal/model/metadata:
+    get:
+      summary: Return active model versions and calibration metadata
+      responses:
+        "200":
+          description: Model metadata
+  /internal/model/evaluate:
+    get:
+      summary: Return held-out evaluation metrics for the active text model
+      responses:
+        "200":
+          description: Evaluation metrics including accuracy, precision, recall, F1, ECE, and calibration buckets

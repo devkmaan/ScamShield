@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scamshield.local/schemas/merchant-risk.schema.json",
+  "title": "MerchantRisk",
+  "type": "object",
+  "required": ["payeeHash", "riskScore", "complaintCount", "aliases", "needsHumanReview"],
+  "properties": {
+    "payeeHash": { "type": "string" },
+    "riskScore": { "type": "number", "minimum": 0, "maximum": 1 },
+    "complaintCount": { "type": "integer", "minimum": 0 },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "firstSeen": { "type": "string", "format": "date-time" },
+    "lastSeen": { "type": "string", "format": "date-time" },
+    "needsHumanReview": { "type": "boolean" },
+    "connectedRiskCount": { "type": "integer", "minimum": 0 }
+  },
+  "additionalProperties": false
+}
+

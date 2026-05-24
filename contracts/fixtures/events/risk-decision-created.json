@@ -1,0 +1,26 @@
+{
+  "eventId": "evt-demo",
+  "eventType": "risk.decision.created",
+  "schemaVersion": "1.0.0",
+  "correlationId": "corr-demo",
+  "createdAt": "2026-04-25T08:00:00Z",
+  "producer": "scamshield-risk-core",
+  "payload": {
+    "decisionId": "dec-demo",
+    "inputType": "TEXT",
+    "riskLevel": "CRITICAL",
+    "score": 0.92,
+    "confidence": 0.94,
+    "scamType": "PHISHING",
+    "topSignals": ["otp_request", "brand_spoofing"],
+    "userMessage": "Critical risk lag raha hai. Payment mat karo.",
+    "recommendedActions": ["Do not share OTP."],
+    "needsHumanReview": false,
+    "modelVersions": {
+      "rules": "rules-v1",
+      "text": "text-scam-nb-v1",
+      "explanation": "template-explainer-v1"
+    },
+    "createdAt": "2026-04-25T08:00:00Z"
+  }
+}
